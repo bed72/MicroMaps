@@ -19,4 +19,4 @@ Ter configurado no <i>host</i> em que será executado o codigo o:<br/>
 <strong>(nameko):</strong> https://www.nameko.io/<br/>
 <strong>(fastapi):</strong> https://fastapi.tiangolo.com/features/<br/>
 
-Também pode ser executado com Django e Flask, (realizar devidas configurações).
+Também pode ser executado com <i>Django</i> e <i>Flask</i>, (realizar devidas configurações).
