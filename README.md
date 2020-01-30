@@ -19,4 +19,12 @@ Ter configurado no <i>host</i> em que será executado o codigo o:<br/>
 <strong>(nameko):</strong> https://www.nameko.io/<br/>
 <strong>(fastapi):</strong> https://fastapi.tiangolo.com/features/<br/>
 
-Também pode ser executado com <i>Django</i> e <i>Flask</i>, (realizar devidas configurações).
+Também pode ser executado com <i>Django</i> e <i>Flask</i>, (realizar devidas configurações).<br/>
+
+# Execução do Microservice:<br/>
+<strong>nameko run --config ./service.yaml microservice:MapsService</strong><br/>
+
+Onde:<br/>
+<strong>./service.yaml:</strong> E o nome do arquivo de configuração para rodar conexão com p <i>Rabbitmq</i> <br/>
+<strong>microservice:</strong> E o nome do arquivo que conterá código <i>Nameko</i> <br/>
+<strong>MapsService:</strong> E o nome da classe que conterá código <i>Nameko</i> <br/>
