@@ -2,7 +2,7 @@
 Microsserviço para obtenção de dados de arquivos .osm <span style="font-size: 100px">&#129497;&#127997;</span>
 
 
-Tanto o Micro serviço quanto a api estão dentro do mesmo pacote Python,
+Tanto o Microsserviço quanto a api estão dentro do mesmo pacote Python,
 porém executar individualmente cada um dos serviços!
 
 Ter configurado no <i>host</i> em que será executado o codigo o:<br/>
