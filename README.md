@@ -1,5 +1,5 @@
 # MicroMaps
-Micro serviço para obtenção de dados de arquivos .osm <span style="font-size: 100px">&#129497;&#127997;</span>
+Microsserviço para obtenção de dados de arquivos .osm <span style="font-size: 100px">&#129497;&#127997;</span>
 
 
 Tanto o Micro serviço quanto a api estão dentro do mesmo pacote Python,
