@@ -19,7 +19,7 @@ async def root(arq_name: str) -> list:
     try:
         with ClusterRpcProxy(config) as rpc:
             with open(osm) as arq:
-                """ EAFP E melhor pedir perdão do que permissão, 'para arquivo's """
+                """ EAFP E melhor pedir perdão do que permissão, 'para arquivos' """
                 # Passando tarefa de extrair os dados para o MicroServiço
                 date = rpc.maps.get(osm)
                 # Se tudo der certo retorna um JSON dos dados lon, lat!
