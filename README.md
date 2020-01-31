@@ -21,7 +21,14 @@ Ter configurado no <i>host</i> em que será executado o codigo o:<br/>
 
 Também pode ser executado com <i>Django</i> e <i>Flask</i>, (realizar devidas configurações).<br/>
 
+# Execução da API:<br/>
+Navegue até a pasta <i>api</i> e execute o comando:<br/>
+
+<strong>uvicorn api:app --reload</strong><br/>
+
+
 # Execução do Microservice:<br/>
+
 <strong>nameko run --config ./service.yaml microservice:MapsService</strong><br/>
 
 Onde:<br/>
