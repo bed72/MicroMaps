@@ -12,5 +12,5 @@ DATABASES: dict = {
 
 # Lista que indentifa os arquivos .osm
 STATICFILES_DIRS: list = [
-    os.path.join(os.path.normpath(BASE_DIR), "maps\\files\\"),
+    os.path.join(os.path.normpath(BASE_DIR), "files\\"),
 ]

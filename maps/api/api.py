@@ -5,7 +5,7 @@ from nameko.standalone.rpc import ClusterRpcProxy
 
 app = FastAPI()
 # Configuração da conexão com Servidor Rabbitmq
-config: str = {"AMQP_URI": "amqp://user:password@ip_server"}
+config: str = {"AMQP_URI": "amqp://bed:cicada3301@192.168.1.166"}
 
 
 @app.get("/{arq_name}")
@@ -16,10 +16,11 @@ async def root(arq_name: str) -> list:
     """
     date: list = []
     osm: str = f"{settings.STATICFILES_DIRS[0]}{arq_name}.osm"
+
     try:
         with ClusterRpcProxy(config) as rpc:
             with open(osm) as arq:
-                """ EAFP E melhor pedir perdão do que permissão, 'para arquivo's """
+                """ EAFP E melhor pedir perdão do que permissão, 'para arquivos' """
                 # Passando tarefa de extrair os dados para o MicroServiço
                 date = rpc.maps.get(osm)
                 # Se tudo der certo retorna um JSON dos dados lon, lat!
