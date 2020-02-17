@@ -5,7 +5,7 @@ from nameko.standalone.rpc import ClusterRpcProxy
 
 app = FastAPI()
 # Configuração da conexão com Servidor Rabbitmq
-config: str = {"AMQP_URI": "amqp://bed:cicada3301@192.168.1.166"}
+config: str = {"AMQP_URI": "amqp://user:password@ip_server"}
 
 
 @app.get("/{arq_name}")
